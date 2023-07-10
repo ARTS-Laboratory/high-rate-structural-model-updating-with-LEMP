@@ -1,2 +1,5 @@
-# high-rate-structural-model-updating-with-LEMP
-A high-rate structural model updating methodology using the local modification procedure (LEMP)
+# High-Rate Structural Model Updating with LEMP
+A high-rate structural model updating methodology using the local modification procedure (LEMP).
+
+
+
