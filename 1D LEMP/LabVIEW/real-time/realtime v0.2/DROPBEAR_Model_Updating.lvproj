@@ -16,6 +16,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Model_Updating_Classes" Type="Folder" URL="../Model_Updating_Classes">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Host_Automate_Full_Timing_Study.vi" Type="VI" URL="../Host_Automate_Full_Timing_Study.vi"/>
 		<Item Name="Host_Model_Updating.vi" Type="VI" URL="../Host_Model_Updating.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -352,19 +355,10 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Write File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write File+ (string).vi"/>
 			</Item>
-			<Item Name="Data_Array.lvclass" Type="LVClass" URL="../Model_Updating_Classes/Data_Array/Data_Array.lvclass"/>
-			<Item Name="DROPBEAR_Model_Updating.lvclass" Type="LVClass" URL="../Model_Updating_Classes/DROPBEAR_Model_Updating/DROPBEAR_Model_Updating.lvclass"/>
-			<Item Name="FEA_Model.lvclass" Type="LVClass" URL="../Model_Updating_Classes/FEA_Model/FEA_Model.lvclass"/>
-			<Item Name="Kalman_Filter.lvclass" Type="LVClass" URL="../Model_Updating_Classes/Kalman_Filter/Kalman_Filter.lvclass"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvStorage.dll" Type="Document" URL="lvStorage.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="MOCKBEAR.lvclass" Type="LVClass" URL="../Model_Updating_Classes/MOCKBEAR/MOCKBEAR.lvclass"/>
-			<Item Name="Moving_Statistic.lvclass" Type="LVClass" URL="../Model_Updating_Classes/Moving_Statistic/Moving_Statistic.lvclass"/>
-			<Item Name="Online_SNR.lvclass" Type="LVClass" URL="../Model_Updating_Classes/Online_SNR/Online_SNR.lvclass"/>
-			<Item Name="Online_Statistic.lvclass" Type="LVClass" URL="../Model_Updating_Classes/Online_Statistic/Online_Statistic.lvclass"/>
-			<Item Name="Online_TRAC.lvclass" Type="LVClass" URL="../Model_Updating_Classes/Online_TRAC/Online_TRAC.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -817,7 +811,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D688D1EC-FF1D-4B48-80E7-C54985C2A598}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">7</Property>
+				<Property Name="Bld_version.build" Type="Int">8</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin</Property>
@@ -835,7 +829,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/NI-PXIe-8821-032399A7/Online_Target.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref"></Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
