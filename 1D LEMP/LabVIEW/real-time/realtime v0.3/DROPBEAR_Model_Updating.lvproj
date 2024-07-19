@@ -4,7 +4,10 @@
 	<Property Name="varPersistentID:{01FBBD5B-5BE9-42C2-9683-CDDD3FB40E62}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Model_Updating_Type</Property>
 	<Property Name="varPersistentID:{29B32D14-4D99-46E7-B5CB-2E14F02E347E}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Model_Updating_Object</Property>
 	<Property Name="varPersistentID:{2F0CE449-C417-48C6-A5BF-88F4438EFF85}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Process_Halt</Property>
+	<Property Name="varPersistentID:{4B569169-F62F-4DFD-AC82-D5FC5CCEA5A7}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Progress</Property>
 	<Property Name="varPersistentID:{66CC2E88-2CC3-4A87-AF76-9A3FA8701B76}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Process_Start</Property>
+	<Property Name="varPersistentID:{CD5164B3-F7AB-42CC-A350-62BD5B7E0F25}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Online_Time</Property>
+	<Property Name="varPersistentID:{D13712FA-B306-4737-B6DA-24E87F2F4DEB}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Preprocessing_Time</Property>
 	<Property Name="varPersistentID:{D4D24DD2-0DAD-419D-83A4-68BB6F0D6F68}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Experiment_Ongoing</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -19,6 +22,7 @@
 		<Item Name="Host_Automate_Full_Timing_Study.vi" Type="VI" URL="../Host_Automate_Full_Timing_Study.vi"/>
 		<Item Name="Host_Model_Updating.vi" Type="VI" URL="../Host_Model_Updating.vi"/>
 		<Item Name="Host_Reader.vi" Type="VI" URL="../Host_Reader.vi"/>
+		<Item Name="time_formatter.vi" Type="VI" URL="../Model_Updating_Classes/MOCKBEAR/Standard Index Set/time_formatter.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="__closeStorageFromObject.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/storage/Storage.llb/__closeStorageFromObject.vi"/>
@@ -451,7 +455,6 @@ AddOutputFilter chunkFilter
 		<Item Name="data_interface.lvlib" Type="Library" URL="../data_interface.lvlib"/>
 		<Item Name="Online_Target.vi" Type="VI" URL="../Online_Target.vi"/>
 		<Item Name="Online_Target_2.vi" Type="VI" URL="../Online_Target_2.vi"/>
-		<Item Name="test7.txt" Type="Document" URL="../Model_Updating_Classes/MOCKBEAR/Standard Index Set/test7.txt"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="__closeStorageFromObject.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/storage/Storage.llb/__closeStorageFromObject.vi"/>
