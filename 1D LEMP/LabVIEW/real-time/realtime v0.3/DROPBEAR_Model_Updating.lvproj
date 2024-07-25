@@ -1,14 +1,14 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="21008000">
-	<Property Name="varPersistentID:{01D9A6F8-2129-4290-9B21-902DF162EDEE}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Target_Ready</Property>
-	<Property Name="varPersistentID:{01FBBD5B-5BE9-42C2-9683-CDDD3FB40E62}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Model_Updating_Type</Property>
-	<Property Name="varPersistentID:{29B32D14-4D99-46E7-B5CB-2E14F02E347E}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Model_Updating_Object</Property>
-	<Property Name="varPersistentID:{2F0CE449-C417-48C6-A5BF-88F4438EFF85}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Process_Halt</Property>
-	<Property Name="varPersistentID:{4B569169-F62F-4DFD-AC82-D5FC5CCEA5A7}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Progress</Property>
-	<Property Name="varPersistentID:{66CC2E88-2CC3-4A87-AF76-9A3FA8701B76}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Process_Start</Property>
-	<Property Name="varPersistentID:{CD5164B3-F7AB-42CC-A350-62BD5B7E0F25}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Online_Time</Property>
-	<Property Name="varPersistentID:{D13712FA-B306-4737-B6DA-24E87F2F4DEB}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Preprocessing_Time</Property>
-	<Property Name="varPersistentID:{D4D24DD2-0DAD-419D-83A4-68BB6F0D6F68}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Experiment_Ongoing</Property>
+	<Property Name="varPersistentID:{045BCD0B-91EB-46A6-B571-FFE4B62EA60A}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Progress</Property>
+	<Property Name="varPersistentID:{14306ADD-3E72-4358-A0E7-26085E42E31B}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Preprocessing_Time</Property>
+	<Property Name="varPersistentID:{16AADD41-383A-4F63-A941-E41997E35105}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Experiment_Ongoing</Property>
+	<Property Name="varPersistentID:{5C4F10E6-32A2-4703-99BD-7FE88C1C3F11}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Online_Time</Property>
+	<Property Name="varPersistentID:{8E66A807-407E-4DCD-9FC2-0A60D95AA6CD}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Model_Updating_Object</Property>
+	<Property Name="varPersistentID:{9B027F1C-7724-47A0-AD5C-363F0600FBF0}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Model_Updating_Type</Property>
+	<Property Name="varPersistentID:{B40A5D7B-FE07-4444-9C35-2E990EAF1BC8}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Process_Start</Property>
+	<Property Name="varPersistentID:{B601F0AA-D3FD-4A37-962E-0F12701ACFF0}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Process_Halt</Property>
+	<Property Name="varPersistentID:{F050956A-E477-435C-BA3F-5FD901DB4867}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Target_Ready</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -19,10 +19,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Host_Automate_Full_Timing_Study.vi" Type="VI" URL="../Host_Automate_Full_Timing_Study.vi"/>
-		<Item Name="Host_Model_Updating.vi" Type="VI" URL="../Host_Model_Updating.vi"/>
 		<Item Name="Host_Reader.vi" Type="VI" URL="../Host_Reader.vi"/>
-		<Item Name="time_formatter.vi" Type="VI" URL="../Model_Updating_Classes/MOCKBEAR/Standard Index Set/time_formatter.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="__closeStorageFromObject.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/storage/Storage.llb/__closeStorageFromObject.vi"/>
@@ -370,6 +367,7 @@
 			<Item Name="Online_SNR.lvclass" Type="LVClass" URL="../Model_Updating_Classes/Online_SNR/Online_SNR.lvclass"/>
 			<Item Name="Online_Statistic.lvclass" Type="LVClass" URL="../Model_Updating_Classes/Online_Statistic/Online_Statistic.lvclass"/>
 			<Item Name="Online_TRAC.lvclass" Type="LVClass" URL="../Model_Updating_Classes/Online_TRAC/Online_TRAC.lvclass"/>
+			<Item Name="time_formatter.vi" Type="VI" URL="../Model_Updating_Classes/MOCKBEAR/Standard Index Set/time_formatter.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -404,16 +402,14 @@
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.tcp.access" Type="Str">+*</Property>
-		<Property Name="target.server.tcp.enabled" Type="Bool">true</Property>
+		<Property Name="target.server.tcp.enabled" Type="Bool">false</Property>
 		<Property Name="target.server.tcp.paranoid" Type="Bool">true</Property>
 		<Property Name="target.server.tcp.port" Type="Int">3363</Property>
-		<Property Name="target.server.tcp.serviceName" Type="Str"></Property>
+		<Property Name="target.server.tcp.serviceName" Type="Str">Main Application Instance/VI Server</Property>
 		<Property Name="target.server.tcp.serviceName.default" Type="Str">Main Application Instance/VI Server</Property>
 		<Property Name="target.server.vi.access" Type="Str">+*</Property>
 		<Property Name="target.server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.vi.propertiesEnabled" Type="Bool">true</Property>
-		<Property Name="target.server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">true</Property>
-		<Property Name="target.server.viscripting.showScriptingOperationsInEditor" Type="Bool">true</Property>
 		<Property Name="target.WebServer.Config" Type="Str">Listen 8000
 
 NI.ServerName default
@@ -453,7 +449,6 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="data_interface.lvlib" Type="Library" URL="../data_interface.lvlib"/>
-		<Item Name="Online_Target.vi" Type="VI" URL="../Online_Target.vi"/>
 		<Item Name="Online_Target_2.vi" Type="VI" URL="../Online_Target_2.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -803,49 +798,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Online_Statistic.lvclass" Type="LVClass" URL="../Model_Updating_Classes/Online_Statistic/Online_Statistic.lvclass"/>
 			<Item Name="Online_TRAC.lvclass" Type="LVClass" URL="../Model_Updating_Classes/Online_TRAC/Online_TRAC.lvclass"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build">
-			<Item Name="rt" Type="Source Distribution">
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{54B7FDF2-A61E-4266-B56A-78D76FBACE3F}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">rt</Property>
-				<Property Name="Bld_excludedDirectory[0]" Type="Path">vi.lib</Property>
-				<Property Name="Bld_excludedDirectory[0].pathType" Type="Str">relativeToAppDir</Property>
-				<Property Name="Bld_excludedDirectory[1]" Type="Path">resource/objmgr</Property>
-				<Property Name="Bld_excludedDirectory[1].pathType" Type="Str">relativeToAppDir</Property>
-				<Property Name="Bld_excludedDirectory[2]" Type="Path">/C/ProgramData/National Instruments/InstCache/21.0</Property>
-				<Property Name="Bld_excludedDirectory[3]" Type="Path">/C/Users/Alexander/Documents/LabVIEW Data/2021(64-bit)/ExtraVILib</Property>
-				<Property Name="Bld_excludedDirectory[4]" Type="Path">instr.lib</Property>
-				<Property Name="Bld_excludedDirectory[4].pathType" Type="Str">relativeToAppDir</Property>
-				<Property Name="Bld_excludedDirectory[5]" Type="Path">user.lib</Property>
-				<Property Name="Bld_excludedDirectory[5].pathType" Type="Str">relativeToAppDir</Property>
-				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/rt</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{D688D1EC-FF1D-4B48-80E7-C54985C2A598}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">8</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0A072E4C-ACB9-412B-97DB-4B6BF9F0D991}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib</Property>
-				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[1].type" Type="Str">Library</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref"></Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
-			</Item>
-		</Item>
+		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
