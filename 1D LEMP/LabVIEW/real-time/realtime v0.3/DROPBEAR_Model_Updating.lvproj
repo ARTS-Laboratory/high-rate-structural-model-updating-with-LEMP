@@ -3,6 +3,7 @@
 	<Property Name="varPersistentID:{045BCD0B-91EB-46A6-B571-FFE4B62EA60A}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Progress</Property>
 	<Property Name="varPersistentID:{14306ADD-3E72-4358-A0E7-26085E42E31B}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Preprocessing_Time</Property>
 	<Property Name="varPersistentID:{16AADD41-383A-4F63-A941-E41997E35105}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Experiment_Ongoing</Property>
+	<Property Name="varPersistentID:{25926A34-7A78-472B-911C-FBCD23BF6108}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/continue</Property>
 	<Property Name="varPersistentID:{5C4F10E6-32A2-4703-99BD-7FE88C1C3F11}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Online_Time</Property>
 	<Property Name="varPersistentID:{8E66A807-407E-4DCD-9FC2-0A60D95AA6CD}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Model_Updating_Object</Property>
 	<Property Name="varPersistentID:{9B027F1C-7724-47A0-AD5C-363F0600FBF0}" Type="Ref">/NI-PXIe-8821-032399A7/data_interface.lvlib/Model_Updating_Type</Property>
@@ -449,7 +450,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="data_interface.lvlib" Type="Library" URL="../data_interface.lvlib"/>
-		<Item Name="Online_Target_2.vi" Type="VI" URL="../Online_Target_2.vi"/>
+		<Item Name="Online_Target_3.vi" Type="VI" URL="../Online_Target_3.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="__closeStorageFromObject.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/storage/Storage.llb/__closeStorageFromObject.vi"/>

@@ -4,6 +4,7 @@ Created on Thu Jul 18 16:37:21 2024
 
 @author: Alexander
 """
+from collections import namedtuple
 import numpy as np
 import os
 
