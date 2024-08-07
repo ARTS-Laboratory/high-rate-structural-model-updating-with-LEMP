@@ -33,20 +33,13 @@ def list_files_in_directory(directory):
 
 
 class guassian_stat:
-    def __init__(self,mean:float=0,variance:float=0,maximum:float=0,
-                 minimum:float=0,samples:int=0):
-        self.set_data(self, mean,variance,maximum,minimum,samples)
-        return self
-    
-    def set_data(self,mean:float=0,variance:float=0,maximum:float=0,
-                 minimum:float=0,samples:int=0):
-        self.mean,self.variance,self.std_dev=mean,variance,np.sqrt(variance)
-        self.maximum,self.minimum,self.samples=maximum,minimum,samples
+    def __init__(self,dist:tuple):
+        self.d=dist
         return self
     
     def gen_distribution(self,length:int=400,bounds:iter=[0,4E3],norm:bool=True):
-        mu,d_max,d_min=self.mean,self.maximum, self.minimum
-        s,n=np.sqrt(self.variance),self.samples
+        mu,d_max,d_min=self.d.mean,self.d.maximum, self.d.minimum
+        s,n=np.sqrt(self.d.var),self.d.samples
         CI95 = lambda s, n: 1.96*(s/(n**.5))
         gaussian = np.vectorize(
             lambda x : 1/(np.sqrt(2*np.pi)*s)*np.exp(-np.power((x-mu)/s,2)/2))
@@ -156,11 +149,12 @@ def loadExperiments():
     return experiments
 
 Experiments=loadExperiments()
-def fx(x):
-    return x**2 +2*x +1
-a=2
-function_example = np.vectorize(lambda x: x**2 +a*x +1)
-x=np.linspace(0,100,num=1000)
-y=function_example(x)
+# def fx(x):
+#     return x**2 +2*x +1
+# a=2
+# function_example = np.vectorize(lambda x: x**2 +a*x +1)
+# x=np.linspace(0,100,num=1000)
+# y=function_example(x)
+
 
 
