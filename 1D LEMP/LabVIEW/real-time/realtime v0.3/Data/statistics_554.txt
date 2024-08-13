@@ -1,0 +1,40 @@
+Signal Quality
+Signal                           ,SNR             ,TRAC           ,Error Mean      ,Error Variance  ,Error Max       ,ErrorMin       ,Samples
+Frequency Signal Characteristics ,000001.327433E+1,000009.558067E-1,000001.087288E+1,000004.920738E+1,000002.804970E+1,00001.058067E-2,0000000000000028
+Position Signal Characteristics  ,000004.886120E+0,000008.468510E-1,000005.957520E+1,000001.919421E+2,000009.039846E+1,00003.354050E+1,0000000000000028
+
+Timing stats
+Process                          ,Mean            ,Variance        ,Max             ,Min            ,Samples
+DAQ Timing Distribution          ,000002.602464E+3,000003.575172E+2,000002.648000E+3,00002.567000E+3,0000000000000028
+FFT Timing Distribution          ,000001.752857E+2,000007.465608E+1,000002.000000E+2,00001.630000E+2,0000000000000028
+FFT KF Timing Distribution       ,000008.047750E+3,000003.039827E+4,000008.624000E+3,00007.772000E+3,0000000000000028
+Sampling Timing Distribution     ,000001.189998E+6,00001.839556E+10,000001.672600E+6,00001.135923E+6,0000000000000028
+FEA Timing Distribution          ,000002.859179E+3,000004.883708E+3,000003.079000E+3,00002.759000E+3,0000000000000028
+State KF Timing Distribution     ,000002.791857E+3,000001.086053E+3,000002.863000E+3,00002.745000E+3,0000000000000028
+Cycle Timing Distribution        ,000001.209156E+6,00001.839563E+10,000001.691844E+6,00001.155259E+6,0000000000000028
+Statistics Timing Distribution   ,000003.363214E+2,000002.166967E+3,000004.560000E+2,00002.700000E+2,0000000000000028
+
+BeamLength,0.3525
+YoungsModulus,2.095000E+11
+BeamHeight,0.0063
+BeamWidth,0.0508
+BeamDensity,7900.0000
+FEANodes,240
+AccelMass,0.0550
+Dataset,test7
+ResampleMethod,0
+EigenSolver,2
+ModelsForcasted,3
+FreqKF,1
+StateKF,0
+FreqKFmv,0.400000
+FreqKFsv,0.010000
+FreqKFthresh,1000000000.000000
+StateKFmv,0.400000
+StateKFsv,0.900000
+StateKFthresh,1000000000.000000
+BufferSizeTimeSeries,10000
+RecordTimeSeries,1
+RecordMovingWindow,0
+RecordOnlineMetrics,1
+RecordTimeStats,1
